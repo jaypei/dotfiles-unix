@@ -10,3 +10,10 @@ export QT_IM_MODULE=xim
 #export LC_ALL=en_US.UTF-8
 export LC_ALL=zh_CN.UTF-8
 export LC_CTYPE=zh_CN.UTF-8
+
+KEYRING_ENV=$(sudo gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
+eval "$KEYRING_ENV"
+export GNOME_KEYRING_CONTROL
+export SSH_AUTH_SOCK
+export GNOME_KEYRING_PID
+

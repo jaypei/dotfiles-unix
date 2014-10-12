@@ -1,13 +1,11 @@
 mkdir -p /tmp/ssh
 
 export LC_CTYPE=zh_CN.UTF-8
-export PATH=~/bin:~/gocode/bin:~/work/vimwiki/bin:$PATH
+export PATH=~/bin:~/gocode/bin:~/work/vimwiki/bin:/usr/local/bin:$PATH
 export GOPATH=/home/jaypei/gocode
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 
 alias ls='ls --color'
-alias ack='/usr/bin/vendor_perl/ack'
-alias ack-grep='ack'
 alias gd='git diff --color'
 
 . /usr/share/virtualenvwrapper/virtualenvwrapper.sh

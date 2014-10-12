@@ -1,10 +1,10 @@
 
 ! Xft settings ----------------------------
-Xft.dpi:96
-Xft.antialias: true
-Xft.rgba: rgb
-Xft.hinting: true
-Xft.hintstyle: hintslight
+!Xft.dpi:96
+!Xft.antialias: true
+!Xft.rgba: rgb
+!Xft.hinting: true
+!Xft.hintstyle: hintslight
 
 ! URxvt settings ----------------------------
 
