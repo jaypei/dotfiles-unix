@@ -10,7 +10,7 @@
 
 URxvt.selection.pattern-0: \][ ](.+)
 URxvt.selection.pattern-1: >>>[ ]+(.+)
-URxvt.cutchars: "\\ `\"\'()*;<>[]{|}&,=?@^\:-."
+URxvt.cutchars: "\\ `\"\'()*;<>[]{|}&,=?@^\:"
 
 ! disable Ctrl+Shift
 URxvt.iso14755_52: false
@@ -118,7 +118,8 @@ URxvt.inputMethod: fcitx
 !Urxvt.imFont: -adobe-times-bold-i-normal--12-120-75-75-p-68-iso10646-1
 
 !UI
-URxvt.internalBorder:10
+!URxvt.internalBorder:10
+URxvt.internalBorder:5
 URxvt.externalBorder:0
 
 ! Extensions
