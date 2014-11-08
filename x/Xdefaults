@@ -1,4 +1,69 @@
+! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! ------------------------------------------------------------------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! ------------------------------------------------------------------------------
 
+! --- special colors ---
+
+*background: #000000
+*foreground: #d9e6f2
+
+! --- standard colors ---
+
+! black
+*color0: #000000
+
+! bright_black
+*color8: #3f3f3f
+
+! red
+*color1: #bb1900
+
+! bright_red
+*color9: #ff705a
+
+! green
+*color2: #00bb19
+
+! bright_green
+*color10: #5aff70
+
+! yellow
+*color3: #a2bb00
+
+! bright_yellow
+*color11: #e9ff5a
+
+! blue
+*color4: #1900bb
+
+! bright_blue
+*color12: #705aff
+
+! magenta
+*color5: #bb00a2
+
+! bright_magenta
+*color13: #ff5ae9
+
+! cyan
+*color6: #00a2bb
+
+! bright_cyan
+*color14: #5ae9ff
+
+! white
+*color7: #c8c8c8
+
+! bright_white
+*color15: #ffffff
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
 ! Xft settings ----------------------------
 Xft.dpi:96
 Xft.antialias: true
@@ -36,37 +101,7 @@ URxvt.urgentOnBell: true
 !!光标闪烁
 URxvt.cursorBlink: true
 
-!颜色
-URxvt.foreground: #F8F8F2
-URxvt.background: #272822
-URxvt.cursorColor: #008800
 
-! Black
-URxvt.color0:#404040
-URxvt.color8:#505050
-! Red
-URxvt.color1:#D55986
-URxvt.color9:#EA84A9
-! Green
-URxvt.color2:#D0EF92
-URxvt.color10:#A5C95B
-! Yellow
-URxvt.color3:#FFC178
-URxvt.color11:#E6BE74
-! Blue
-URxvt.color4:#66A8EF
-URxvt.color12:#90A7C1
-! Magenta
-URxvt.color5:#906479
-URxvt.color13:#DF5784
-! Cyan
-URxvt.color6:#8AA7B9
-URxvt.color14:#B7E2FB
-! White
-URxvt.color7:#D2D2D2
-URxvt.color15:#FFFFFF
-
-URxvt.tintColor: #333333
 URxvt.fading: 5
 URxvt.fadeColor: [0]black
 URxvt.cursorUnderline: false
@@ -99,10 +134,10 @@ URxvt.mapAlert: true
 URxvt.print-pipe: cat > $(echo urxvt.dump.`date +'%Y%M%d%H%m%S'`)
 
 ! Font
-URxvt.font:xft:Fantasque Sans Mono:size=12,xft:STHeiti:size=12
-URxvt.boldFont:xft:Fantasque Sans Mono:size=12,xft:STHeiti:size=12
+URxvt.font:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
+URxvt.boldFont:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
 
-urxvt.letterSpace: -1
+urxvt.letterSpace: -1.9
 
 !URxvt.font:xft:Monofur:size=12:Bold,xft:Heiti SC:size=12:Regular
 !URxvt.boldFont:xft:Monofur:size=12:Bold,xft:Heiti SC:size=12:Regular
