@@ -1,10 +1,10 @@
 
 ! Xft settings ----------------------------
-!Xft.dpi:96
-!Xft.antialias: true
-!Xft.rgba: rgb
-!Xft.hinting: true
-!Xft.hintstyle: hintslight
+Xft.dpi:96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
 
 ! URxvt settings ----------------------------
 
@@ -100,7 +100,7 @@ URxvt.print-pipe: cat > $(echo urxvt.dump.`date +'%Y%M%d%H%m%S'`)
 
 ! Font
 URxvt.font:xft:Fantasque Sans Mono:size=12,xft:STHeiti:size=12
-URxvt.boldFont:xft:Fantasque Sans Mono:size=12:Bold,xft:STHeiti:size=12
+URxvt.boldFont:xft:Fantasque Sans Mono:size=12,xft:STHeiti:size=12
 
 urxvt.letterSpace: -1
 
