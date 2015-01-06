@@ -1,8 +1,12 @@
-! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+!
+! 使用 patch 过的 rxvt-unicode
+! https://github.com/jianingy/multipkg-package/tree/master/rxvt-unicode
+!
+! ------------------------------------------------------------------------------
+
 ! ------------------------------------------------------------------------------
 ! --- generated with 4bit Terminal Color Scheme Designer -----------------------
-! ------------------------------------------------------------------------------
-! --- http://ciembor.github.com/4bit -------------------------------------------
 ! ------------------------------------------------------------------------------
 
 ! --- special colors ---
@@ -60,10 +64,10 @@
 ! bright_white
 *color15: #ffffff
 
-
 ! ------------------------------------------------------------------------------
 ! --- end of terminal colors section -------------------------------------------
 ! ------------------------------------------------------------------------------
+
 ! Xft settings ----------------------------
 Xft.dpi:96
 Xft.antialias: true
@@ -137,7 +141,7 @@ URxvt.print-pipe: cat > $(echo urxvt.dump.`date +'%Y%M%d%H%m%S'`)
 URxvt.font:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
 URxvt.boldFont:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
 
-urxvt.letterSpace: -1.9
+#urxvt.letterSpace: -1.9
 
 !URxvt.font:xft:Monofur:size=12:Bold,xft:Heiti SC:size=12:Regular
 !URxvt.boldFont:xft:Monofur:size=12:Bold,xft:Heiti SC:size=12:Regular
