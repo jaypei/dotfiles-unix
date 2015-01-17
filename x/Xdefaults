@@ -166,7 +166,7 @@ URxvt.externalBorder:0
 ! selection,option-popup,selection-popup,searchable-scrollback,readline
 ! for more: ls /usr/lib/urxvt/perl/
 URxvt.perl-lib: /usr/lib/urxvt/perl
-URxvt.perl-ext-common: default,matcher,clipboard,confirm-paste
+URxvt.perl-ext-common: default,matcher,clipboard,confirm-paste,font-size
 URxvt.matcher.launcher: x-www-browser
 URxvt.matcher.button: 1
 URxvt.iconFile: /usr/share/icons/gnome/scalable/apps/utilities-terminal-symbolic.svg
@@ -174,5 +174,9 @@ URxvt.keysym.Mod4-c: perl:clipboard:copy
 URxvt.keysym.Mod4-v: perl:clipboard:paste
 URxvt.iso14755: False
 !URxvtbackground: rgba:1500/1500/1500/ffff
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
 
 ! ! vim: ts=4 sw=4 et ai

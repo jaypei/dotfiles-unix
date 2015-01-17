@@ -1,0 +1,10 @@
+#  HTML COLOR NAME   COL A N T STRING or REGULAR EXPRESSION
+#################### ### # # # ################################################################
+White                whi b     (^.*$)
+Magenta              mag b   r ([;`\:\*\-\(\)\$])
+Magenta              mag b   r ([0-9])
+White                whi b   c '"
+White                whi b   c ()
+Red                  red b   r '(.*)'
+Red                  red b   r "(.*)"
+

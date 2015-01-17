@@ -7,5 +7,6 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 
 alias ls='ls --color'
 alias gd='git diff --color'
+alias e='emacs -nw'
 
 . /usr/share/virtualenvwrapper/virtualenvwrapper.sh
