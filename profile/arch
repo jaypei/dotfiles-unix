@@ -1,15 +1,22 @@
 mkdir -p /tmp/ssh
 
+PATH=$HOME/gocode/bin:$PATH
+PATH=$HOME/dotfiles/dotfiles-own/bin:$PATH
+PATH=$HOME/bin:$PATH
+export PATH
+export GOPATH=$HOME/gocode
 export LC_CTYPE=zh_CN.UTF-8
-export PATH=~/bin:~/gocode/bin:~/work/vimwiki/bin:$PATH
-export GOPATH=/home/jaypei/gocode
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+export VIRTUALENVWRAPPER_VIRTUALENV=virtualenv2
 
 alias ls='ls --color'
 alias ack='/usr/bin/vendor_perl/ack'
 alias ack-grep='ack'
 alias gd='git diff --color'
+# https://github.com/nvbn/thefuck
+alias fuck='$(thefuck $(fc -ln -1))'
 
-export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python2"
-export VIRTUALENVWRAPPER_VIRTUALENV="/usr/bin/virtualenv2"
+. "$HOME/.homesick/repos/homeshick/homeshick.sh"
+fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 . /usr/bin/virtualenvwrapper.sh

@@ -141,7 +141,7 @@ URxvt.print-pipe: cat > $(echo urxvt.dump.`date +'%Y%M%d%H%m%S'`)
 URxvt.font:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
 URxvt.boldFont:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
 
-#urxvt.letterSpace: -1.9
+urxvt.letterSpace: -1
 
 !URxvt.font:xft:Monofur:size=12:Bold,xft:Heiti SC:size=12:Regular
 !URxvt.boldFont:xft:Monofur:size=12:Bold,xft:Heiti SC:size=12:Regular
@@ -151,8 +151,10 @@ URxvt.boldFont:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
 !URxvtboldFont:-gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso8859-1,-wenquanyi-wenquanyi bitmap song-medium-r-normal--15-150-75-75-p-80-iso10646-1
 
 ! IM
-URxvt.preeditType: Root
-URxvt.inputMethod: fcitx
+!URxvt.preeditType: Root
+!URxvt.inputMethod: fcitx
+URxvt.preeditType: OverTheSpot
+URxvt.inputMethod: ibus
 !URxvt.preeditType: OverTheSpot
 !Urxvt.imFont: -adobe-times-bold-i-normal--12-120-75-75-p-68-iso10646-1
 
