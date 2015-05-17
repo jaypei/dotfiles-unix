@@ -17,6 +17,5 @@ alias gd='git diff --color'
 # https://github.com/nvbn/thefuck
 alias fuck='$(thefuck $(fc -ln -1))'
 
-. "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 . /usr/bin/virtualenvwrapper.sh
