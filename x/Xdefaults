@@ -5,6 +5,36 @@
 !
 ! ------------------------------------------------------------------------------
 
+!******************************************************************************
+!
+! Xft
+!
+!******************************************************************************
+Xft.dpi:               96
+Xft.rgba:              rgb
+Xft.hinting:           true
+! enable BCI no need to use autohint
+Xft.autohint:          false
+Xft.hintstyle:         hintmedium
+Xft.antialias:         true
+Xft.rh_prefer_bitmaps: true
+Xft.lcdfilter:         lcddefault
+
+!******************************************************************************
+!
+! XCursor
+!
+!******************************************************************************
+
+Xcursor.theme: vanilla-dmz-aa
+Xcursor.size: 32
+
+!******************************************************************************
+!
+! Colors
+!
+!******************************************************************************
+
 ! ------------------------------------------------------------------------------
 ! --- generated with 4bit Terminal Color Scheme Designer -----------------------
 ! ------------------------------------------------------------------------------
@@ -68,15 +98,99 @@
 ! --- end of terminal colors section -------------------------------------------
 ! ------------------------------------------------------------------------------
 
+!******************************************************************************
+! Emacs
+!Emacs.backend: xft
+Emacs.geometry: 120x36+48+48
+Emacs.useXIM: true
+!Emacs*font:-gohu-gohufont-medium-r-normal-*-14-100-100-100-c-80-iso8859-1
+!Emacs*boldFont:-gohu-gohufont-medium-r-normal-*-14-100-100-100-c-80-iso8859-1
+
 ! Xft settings ----------------------------
 Xft.dpi:96
 Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintslight
+!******************************************************************************
+!
+! dzen2
+!
+!******************************************************************************
+dzen2.font:       xft:Consolas:size=7
+dzen2.foreground: #f2f2f5
+dzen2.background: #231f20
 
-! URxvt settings ----------------------------
+!******************************************************************************
+!
+!Xterm
+!
+!******************************************************************************
+xterm*title: xterm
+!xterm*font: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso8859-1
+!xterm*boldFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso8859-1
+!xterm*font: -nil-profont-medium-r-normal--12-120-72-72-c-60-iso8859-1
+!xterm*boldFont: -nil-profont-medium-r-normal--12-120-72-72-c-60-iso8859-1
+xterm*faceName: Monofur
+xterm*faceNameDoublesize: Hannotate SC:style=Regular
+xterm*faceSize: 11
+xterm*boldMode: false
+xterm*cutNewline: false
+xterm*on4Clicks: group
+xterm*on5Clicks: page
+xterm*internalBorder: 8
+xterm*customization: color
+xterm*metaSendsEscape: true
+xterm*colorBDMode: false
+xterm*cursorBlink: false
+xterm*dynamiccolors: true
+xterm*utf8: 1
+xterm*loginShell: false
+xterm*jumpScroll: true
+xterm*multiScroll: true
+xterm*saveLines: 4096
+xterm*scrollBar: false
+xterm*xftAntialias: true
 
+xterm*.foreground: #00bb00
+xterm*.background: #001100
+xterm*.cursorColor: #00bb00
+
+xterm*.color0: #001100
+xterm*.color1: #007700
+xterm*.color2: #00bb00
+xterm*.color3: #007700
+xterm*.color4: #009900
+xterm*.color5: #00bb00
+xterm*.color6: #005500
+xterm*.color7: #00bb00
+
+xterm*.color8: #007700
+xterm*.color9: #007700
+xterm*.color10: #00bb00
+xterm*.color11: #007700
+xterm*.color12: #009900
+xterm*.color13: #00bb00
+xterm*.color14: #005500
+xterm*.color15: #00ff00
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+xterm*.color16: #009900
+xterm*.color17: #005500
+xterm*.color18: #003300
+xterm*.color19: #005500
+xterm*.color20: #009900
+xterm*.color21: #00dd00
+
+
+!******************************************************************************
+!
+! URxvt
+!
+!******************************************************************************
+!URxvtbackground: rgba:1500/1500/1500/ffff
+URxvt.cursorBlink: true
 URxvt.selection.pattern-0: \][ ](.+)
 URxvt.selection.pattern-1: >>>[ ]+(.+)
 URxvt.cutchars: "\\ `\"\'()*;<>[]{|}&,=?@^\:"
@@ -88,34 +202,29 @@ URxvt.iso14755_52: false
 URxvt.url-launcher: chromium
 URxvt.matcher.button: 1
 
-!本地透明设置
-URxvt.transparent: false
-! URxvt.shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt.shading: 00
-! only for 24bits color pesudo transparent
-URxvt.inheritPixmap: false
 ! 24 for pesudo transparent, 32 for real transparent
-URxvt.depth: 32
-URxvt.saveLines: 1536
-URxvt.geometry: 80x24
-URxvt.termName: xterm-256color
-URxvt.loginShell: false
-URxvt.urgentOnBell: true
+URxvt.depth:                 32
+URxvt.saveLines:             1536
+URxvt.geometry:              80x24
+URxvt.termName:              xterm-256color
+URxvt.loginShell:            false
+URxvt.urgentOnBell:          true
 
-!!光标闪烁
-URxvt.cursorBlink: true
-
-
-URxvt.fading: 5
-URxvt.fadeColor: [0]black
-URxvt.cursorUnderline: false
-
+! Transparent
+URxvt.transparent:     False
+! only for 24bits color pesudo transparent
+!URxvt.inheritPixmap:    True
+!URxvt.shading:          5
+URxvt.tintColor:         #333333
+URxvt.fading:            5
+URxvt.fadeColor:         [0]black
+URxvt.cursorUnderline:   false
 
 ! Scrollbar
-URxvt.scrollBar: False
-URxvt.scrollBar_right: yes
+URxvt.scrollBar:          False
+URxvt.scrollBar_right:    yes
 URxvt.scrollBar_floating: False
-URxvt.scrollstyle: Next
+URxvt.scrollstyle:        Next
 
 ! http://lifegoo.pluskid.org/wiki/XTerminal.html#urxvt
 ! push content in 'screen' / 'tmux' into urxvt scroll buffer
@@ -126,59 +235,81 @@ URxvt.scrollTtyOutput: False
 URxvt.scrollTtyKeypress: True
 URxvt.scrollWithBuffer: True
 
-! Behaviour URxvt.visualBell: false
+
+! Behaviour URxvt.visualBell:        false
 !---- ctrl+F12 --> clean screen and scroll-bar
 URxvt.keysym.Control-F12: command:\033c
-
 !---- setting remote-clipboard
 !URxvt.remote-selection.store: rsh ruth ’cat >/tmp/distributed-selection’
 !URxvt.remote-selection.fetch: rsh ruth ’cat /tmp/distributed-selection’
 !de-iconify (map) on receipt of a bell character, may cause damage screen
-URxvt.mapAlert: true
-URxvt.print-pipe: cat > $(echo urxvt.dump.`date +'%Y%M%d%H%m%S'`)
+URxvt.mapAlert:           true
+URxvt.print-pipe:         cat > $(echo urxvt.dump.`date +'%Y%M%d%H%m%S'`)
 
 ! Font
-URxvt.font:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
-URxvt.boldFont:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
+!URxvt.font:xft:Fantasque Sans Mono:size=11,xft:Heiti SC:size=11:Regular
+!URxvt.boldFont:xft:Fantasque Sans Mono:size=11,xft:Heiti SC:size=11:Regular
+URxvt.font:xft:Monofur:size=11:Bold,xft:Heiti SC:size=11:Regular
+URxvt.boldFont:xft:Monofur:size=11:Bold,xft:Heiti SC:size=11:Regular
+!URxvt.font:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
+!URxvt.boldFont:xft:Ubuntu Mono:size=12,xft:STHeiti:size=12
 
-urxvt.letterSpace: -1
-
-!URxvt.font:xft:Monofur:size=12:Bold,xft:Heiti SC:size=12:Regular
-!URxvt.boldFont:xft:Monofur:size=12:Bold,xft:Heiti SC:size=12:Regular
-!URxvtfont:-gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso8859-1,xft:SimSun:pixelsize=14:Regular
-!URxvtboldFont:-gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso8859-1,xft:SimSun:pixelsize=14:Regular
-!URxvtfont:-gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso8859-1,-wenquanyi-wenquanyi bitmap song-medium-r-normal--15-150-75-75-p-80-iso10646-1
-!URxvtboldFont:-gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso8859-1,-wenquanyi-wenquanyi bitmap song-medium-r-normal--15-150-75-75-p-80-iso10646-1
+urxvt.letterSpace: 0
 
 ! IM
-!URxvt.preeditType: Root
-!URxvt.inputMethod: fcitx
+URxvt.preeditType: Root
+URxvt.inputMethod: fcitx
 URxvt.preeditType: OverTheSpot
 URxvt.inputMethod: ibus
 !URxvt.preeditType: OverTheSpot
 !Urxvt.imFont: -adobe-times-bold-i-normal--12-120-75-75-p-68-iso10646-1
 
+
 !UI
-!URxvt.internalBorder:10
-URxvt.internalBorder:5
+URxvt.internalBorder:8
 URxvt.externalBorder:0
+
 
 ! Extensions
 !---- perl extensions: enabled by default has:
-! selection,option-popup,selection-popup,searchable-scrollback,readline
+!   selection,option-popup,selection-popup,searchable-scrollback,readline
 ! for more: ls /usr/lib/urxvt/perl/
-URxvt.perl-lib: /usr/lib/urxvt/perl
-URxvt.perl-ext-common: default,matcher,clipboard,confirm-paste,font-size
-URxvt.matcher.launcher: x-www-browser
-URxvt.matcher.button: 1
-URxvt.iconFile: /usr/share/icons/gnome/scalable/apps/utilities-terminal-symbolic.svg
+URxvt.perl-lib:           /usr/lib/urxvt/perl
+URxvt.perl-ext-common:    default,matcher,clipboard,confirm-paste,font-size
+URxvt.matcher.launcher:   x-www-browser
+URxvt.matcher.button:     1
+URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-=]*[\\w/-]
+URxvt.iconFile:           /usr/share/icons/gnome/scalable/apps/utilities-terminal-symbolic.svg
 URxvt.keysym.Mod4-c: perl:clipboard:copy
 URxvt.keysym.Mod4-v: perl:clipboard:paste
 URxvt.iso14755: False
-!URxvtbackground: rgba:1500/1500/1500/ffff
 URxvt.keysym.C-Up:     perl:font-size:increase
 URxvt.keysym.C-Down:   perl:font-size:decrease
 URxvt.keysym.C-S-Up:   perl:font-size:incglobal
 URxvt.keysym.C-S-Down: perl:font-size:decglobal
+!! Monokai
+!! https://github.com/oneKelvinSmith/monokai/blob/master/monokai.palette
+!URxvt*background: #272822
+URxvt*foreground: #d8d8d2
+URxvt*cursorColor: #d8d8d2
 
-! ! vim: ts=4 sw=4 et ai
+URxvt*color0: #49483E
+URxvt*color1: #F92672
+URxvt*color2: #A6E22E
+URxvt*color3: #FD971F
+URxvt*color4: #66D9EF
+URxvt*color5: #AE81FF
+URxvt*color6: #A1EFE4
+URxvt*color7: #D8D8D2
+
+URxvt*color8: #75715E
+URxvt*color9: #FC5C94
+URxvt*color10: #C1F161
+URxvt*color11: #FEB257
+URxvt*color12: #8DE6F7
+URxvt*color13: #C2A1FF
+URxvt*color14: #BBF7EF
+URxvt*color15: #F8F8F0
+
+
+! vim: ts=4 sw=4 et ai
