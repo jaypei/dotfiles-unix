@@ -5,10 +5,15 @@ PATH=$HOME/dotfiles/dotfiles-own/bin:$PATH
 PATH=$HOME/bin:$PATH
 export PATH
 export GOPATH=$HOME/gocode
-export LC_CTYPE=zh_CN.UTF-8
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
 export VIRTUALENVWRAPPER_VIRTUALENV=virtualenv2
+export LC_CTYPE=zh_CN.UTF-8
+export XMODIFIERS="@im=fcitx"
+export XIM=fcitx
+export XIM_PROGRAM=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
 
 alias ls='ls --color'
 alias ack='/usr/bin/vendor_perl/ack'
